@@ -23,8 +23,8 @@ Random_Forest,"Pipeline(steps=[('scaler', StandardScaler()),
                                        n_estimators=30, random_state=1234))])",-4683329.663924394,2116.8421286402317,0.7879641597133029
 dt,"Pipeline(steps=[('scaler', StandardScaler()),
                 ('dt',
-                 DecisionTreeRegressor(max_depth=4, max_features=7,
-                                       min_samples_leaf=2))])",-19044182.080410637,4353.560703722094,0.10314642371434546
+                 DecisionTreeRegressor(max_depth=4, max_features=1,
+                                       min_samples_leaf=4))])",-20189476.475526236,4548.020245426616,0.02123796780938536
 cat,"Pipeline(steps=[('cat',
-                 <catboost.core.CatBoostRegressor object at 0x000001DBA884E510>)])",-2950502.833404027,1683.352386420275,0.8659143154769139
+                 <catboost.core.CatBoostRegressor object at 0x000001A989FD9C10>)])",-2950502.833404027,1683.352386420275,0.8659143154769139
 lightgbm,"Pipeline(steps=[('lightgbm', LGBMRegressor(max_depth=7))])",-3056031.591113398,1740.020935045315,0.8567346112756322
