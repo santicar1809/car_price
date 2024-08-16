@@ -1,0 +1,30 @@
+model,best_estimator,best_train_score,rmse_score,r2_score
+Linreg,"Pipeline(steps=[('scaler', StandardScaler()), ('Linreg', LinearRegression())])",-2.4317263221521755e+27,15031215866840.65,-1.0691054886278685e+19
+XGboost,"Pipeline(steps=[('scaler', StandardScaler()),
+                ('xgboost',
+                 XGBRegressor(base_score=None, booster=None, callbacks=None,
+                              colsample_bylevel=None, colsample_bynode=None,
+                              colsample_bytree=None, device=None,
+                              early_stopping_rounds=None,
+                              enable_categorical=False, eval_metric=None,
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.2,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=7, max_leaves=None,
+                              min_child_weight=None, missing=nan,
+                              monotone_constraints=None, multi_strategy=None,
+                              n_estimators=200, n_jobs=None,
+                              num_parallel_tree=None, random_state=1234, ...))])",-4361997.798943138,2077.6937797275523,0.7957343150744898
+Random_Forest,"Pipeline(steps=[('scaler', StandardScaler()),
+                ('random_forest',
+                 RandomForestRegressor(max_depth=30, min_samples_split=10,
+                                       n_estimators=30, random_state=1234))])",-4683329.663924394,2116.8421286402317,0.7879641597133029
+dt,"Pipeline(steps=[('scaler', StandardScaler()),
+                ('dt',
+                 DecisionTreeRegressor(max_depth=4, max_features=7,
+                                       min_samples_leaf=2))])",-19044182.080410637,4353.560703722094,0.10314642371434546
+cat,"Pipeline(steps=[('cat',
+                 <catboost.core.CatBoostRegressor object at 0x000001DBA884E510>)])",-2950502.833404027,1683.352386420275,0.8659143154769139
+lightgbm,"Pipeline(steps=[('lightgbm', LGBMRegressor(max_depth=7))])",-3056031.591113398,1740.020935045315,0.8567346112756322
